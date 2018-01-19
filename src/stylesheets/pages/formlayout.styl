@@ -1,0 +1,49 @@
+@require "../global"
+
+body
+	background $bgcolor
+	
+.form
+	background #fff
+	width 300px
+	height 400px
+	margin-top -220px
+	margin-left -170px
+	position absolute
+	left 50%
+	top 50%
+	border-top 5px solid $bgshadowcolor
+	border-bottom 5px solid $bgshadowcolor
+	padding 20px
+	
+	input
+		width 100%
+		box-sizing border-box
+		padding 10px
+		border-radius 0
+		margin-bottom 10px
+		display block
+		font 13px "open sans", Helvetica, Arial, sans-serif
+		border 1px solid #ddd
+	
+	input:focus
+		outline none
+		border 1px solid $btncolor
+		
+	.btn
+		background $btncolor
+		border 0
+		width 100%
+		box-sizing border-box
+		padding 10px
+		border-radius 0
+		color #fff
+		margin-bottom 10px
+		display block
+		text-align center
+		text-decoration none
+		cursor pointer
+		font 13px "open sans", Helvetica, Arial, sans-serif
+		
+	.btn:hover
+		background $btnhovercolor
